@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Object">
+      <UniqueIdentifier>{afbb28e5-7078-4056-bd53-390b45bdbed8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Object\Character">
+      <UniqueIdentifier>{4e3cb657-fc98-4dc1-a0e9-424a642c0566}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Object\Character\NonPlayerCharacter">
+      <UniqueIdentifier>{f5f60556-1079-4d22-b9b3-8a0e9c2ccb44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Object\Character\PlayerCharacter">
+      <UniqueIdentifier>{fbae881a-e34b-433b-bea9-c72cf88bef96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game">
+      <UniqueIdentifier>{2d0cbd3f-20ce-4f2b-8467-af9755bb94ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Object\DroppedItem">
+      <UniqueIdentifier>{04a9ce09-13f6-4532-b31a-9700477a4e6e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Object.hpp">
+      <Filter>Header Files\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Character.hpp">
+      <Filter>Header Files\Object\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerCharacter.hpp">
+      <Filter>Header Files\Object\Character\PlayerCharacter</Filter>
+    </ClCompile>
+    <ClCompile Include="FriendlyNPC.hpp">
+      <Filter>Header Files\Object\Character\NonPlayerCharacter</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.hpp">
+      <Filter>Header Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Vec2.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Object.cpp">
+      <Filter>Header Files\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Character.cpp">
+      <Filter>Header Files\Object\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="DroppedSpecialItem.cpp">
+      <Filter>Header Files\Object\DroppedItem</Filter>
+    </ClCompile>
+    <ClCompile Include="DroppedWeapon.cpp">
+      <Filter>Header Files\Object\DroppedItem</Filter>
+    </ClCompile>
+    <ClCompile Include="DroppedItem.cpp">
+      <Filter>Header Files\Object\DroppedItem</Filter>
+    </ClCompile>
+    <ClCompile Include="NonPlayerCharacter.cpp">
+      <Filter>Header Files\Object\Character\NonPlayerCharacter</Filter>
+    </ClCompile>
+    <ClCompile Include="FriendlyNPC.cpp">
+      <Filter>Header Files\Object\Character\NonPlayerCharacter</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyNPC.cpp">
+      <Filter>Header Files\Object\Character\NonPlayerCharacter</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerCharacter.cpp">
+      <Filter>Header Files\Object\Character\PlayerCharacter</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="EnemyNPC.hpp">
+      <Filter>Header Files\Object\Character\NonPlayerCharacter</Filter>
+    </ClInclude>
+    <ClInclude Include="NonPlayerCharacter.hpp">
+      <Filter>Header Files\Object\Character\NonPlayerCharacter</Filter>
+    </ClInclude>
+    <ClInclude Include="DroppedWeapon.hpp">
+      <Filter>Header Files\Object\DroppedItem</Filter>
+    </ClInclude>
+    <ClInclude Include="DroppedSpecialItem.hpp">
+      <Filter>Header Files\Object\DroppedItem</Filter>
+    </ClInclude>
+    <ClInclude Include="includes.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Vec2.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DroppedItem.hpp">
+      <Filter>Header Files\Object\DroppedItem</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
