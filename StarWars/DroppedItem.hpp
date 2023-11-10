@@ -5,6 +5,8 @@
 
 class DroppedItem : public Object {
 public:
+	DroppedItem() : Object() {}
+	~DroppedItem() = default;
 protected:
 };
 

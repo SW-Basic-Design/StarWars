@@ -5,6 +5,8 @@
 
 class DroppedWeapon : DroppedItem {
 public:
+	DroppedWeapon() : DroppedItem() {}
+	~DroppedWeapon() = default;
 private:
 };
 

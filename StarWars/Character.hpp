@@ -5,6 +5,8 @@
 
 class Character : public Object {
 public:
+	Character() : Object() {}
+	~Character() = default;
 protected:
 	int speed;
 	int health;

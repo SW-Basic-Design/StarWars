@@ -3,5 +3,8 @@
 
 #include <iostream>
 #include <vector>
+#include <Windows.h>
+#include <conio.h>
+#include <cstdlib>
 
 #endif

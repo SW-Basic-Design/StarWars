@@ -188,25 +188,37 @@
     <ClCompile Include="DroppedSpecialItem.cpp" />
     <ClCompile Include="DroppedWeapon.cpp" />
     <ClCompile Include="EnemyNPC.cpp" />
+    <ClCompile Include="Frame.cpp" />
+    <ClCompile Include="FrameManager.cpp" />
+    <ClCompile Include="FrameTest.cpp" />
     <ClCompile Include="FriendlyNPC.cpp" />
     <ClCompile Include="FriendlyNPC.hpp" />
+    <ClCompile Include="Game.cpp" />
     <ClCompile Include="Game.hpp" />
+    <ClCompile Include="GameManager.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="NonPlayerCharacter.cpp" />
     <ClCompile Include="Object.cpp" />
     <ClCompile Include="Object.hpp" />
+    <ClCompile Include="Particle.cpp" />
     <ClCompile Include="PlayerCharacter.cpp" />
     <ClCompile Include="PlayerCharacter.hpp" />
     <ClCompile Include="Vec2.cpp" />
+    <ClCompile Include="Wall.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DroppedItem.hpp" />
     <ClInclude Include="DroppedSpecialItem.hpp" />
     <ClInclude Include="DroppedWeapon.hpp" />
     <ClInclude Include="EnemyNPC.hpp" />
+    <ClInclude Include="Frame.hpp" />
+    <ClInclude Include="FrameManager.hpp" />
+    <ClInclude Include="GameManager.hpp" />
     <ClInclude Include="includes.hpp" />
     <ClInclude Include="NonPlayerCharacter.hpp" />
+    <ClInclude Include="Particle.hpp" />
     <ClInclude Include="Vec2.hpp" />
+    <ClInclude Include="Wall.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

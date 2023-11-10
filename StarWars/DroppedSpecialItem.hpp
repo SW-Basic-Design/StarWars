@@ -5,6 +5,8 @@
 
 class DroppedSpecialItem : public DroppedItem {
 public:
+	DroppedSpecialItem() : DroppedItem() {}
+	~DroppedSpecialItem() = default;
 private:
 };
 
