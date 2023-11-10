@@ -5,7 +5,7 @@
 
 class Wall: public Object {
 public:
-	Wall() :Object() {}
+	Wall();
 	~Wall() = default;
 };
 

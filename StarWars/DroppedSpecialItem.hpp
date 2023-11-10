@@ -5,9 +5,11 @@
 
 class DroppedSpecialItem : public DroppedItem {
 public:
-	DroppedSpecialItem() : DroppedItem() {}
+	DroppedSpecialItem();
 	~DroppedSpecialItem() = default;
+	void useItem(Object* itemuser);
 private:
+	int itemType;
 };
 
 #endif

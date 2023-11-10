@@ -5,7 +5,7 @@
 
 class EnemyNPC : public NonPlayerCharacter {
 public:
-	EnemyNPC() : NonPlayerCharacter() { }
+	EnemyNPC();
 	~EnemyNPC() = default;
 private:
 };

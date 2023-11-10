@@ -5,9 +5,10 @@
 
 class DroppedItem : public Object {
 public:
-	DroppedItem() : Object() {}
+	DroppedItem();
 	~DroppedItem() = default;
-protected:
+	virtual void useItem(Object* itemuser) = 0;
+protected :
 };
 
 #endif

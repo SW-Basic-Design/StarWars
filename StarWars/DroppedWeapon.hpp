@@ -5,9 +5,11 @@
 
 class DroppedWeapon : DroppedItem {
 public:
-	DroppedWeapon() : DroppedItem() {}
+	DroppedWeapon();
 	~DroppedWeapon() = default;
+	void useItem(Object* itemuser);
 private:
+	int weaponType;
 };
 
 #endif

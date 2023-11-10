@@ -8,6 +8,7 @@
 #include "Object.hpp"
 #include "Particle.hpp"
 #include "Wall.hpp"
+#include "DroppedItem.hpp"
 
 #ifndef GAME_HPP
 #define GAME_HPP
@@ -18,7 +19,7 @@ public:
 	void UpdateObjects();
 private:
 	bool isGameOver;
-	std::vector<Object> objects;
+	std::vector<Object *> objects;
 };
 
 #endif

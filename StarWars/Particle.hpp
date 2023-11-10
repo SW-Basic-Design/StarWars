@@ -5,8 +5,13 @@
 
 class Particle: public Object {
 public:
-	Particle() :Object() {}
+	Particle();
 	~Particle() = default;
+	void setDamage(const int d);
+	int getDamage();
+private :
+	int damage;
+
 };
 
 #endif

@@ -5,7 +5,7 @@
 
 class NonPlayerCharacter : public Character {
 public:
-	NonPlayerCharacter() :Character() {}
+	NonPlayerCharacter();
 	~NonPlayerCharacter() = default;
 protected:
 };

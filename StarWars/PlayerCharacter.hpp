@@ -5,7 +5,7 @@
 
 class PlayerCharacter : public Character {
 public:
-	PlayerCharacter() : Character() {}
+	PlayerCharacter();
 	~PlayerCharacter() = default;
 private:
 };

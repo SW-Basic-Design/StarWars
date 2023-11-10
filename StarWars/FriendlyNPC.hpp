@@ -5,7 +5,7 @@
 
 class FriendlyNPC : public NonPlayerCharacter {
 public:
-	FriendlyNPC() : NonPlayerCharacter() {}
+	FriendlyNPC();
 	~FriendlyNPC() = default;
 private:
 };

@@ -5,8 +5,10 @@
 
 class Character : public Object {
 public:
-	Character() : Object() {}
+	Character();
 	~Character() = default;
+	void setHealth(const int h);
+	void giveDamage(const int d);
 protected:
 	int speed;
 	int health;

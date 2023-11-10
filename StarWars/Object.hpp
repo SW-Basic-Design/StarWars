@@ -21,10 +21,21 @@ public:
 	Object(bool, Vec2);
 	virtual ~Object() = default;
 	Vec2& GetCoord();
+	Vec2& GetSpeed();
+	void SetCoord(const Vec2 & c);
+	void SetNextCoord(const Vec2& c);
+	void SetSpeed(const Vec2& s);
+	bool isCollisionWith(const Object& obj);
+	ObjectType getObjectType();
+	bool isCharacterType();
+	bool isItemType();
+	int getCollisionPriority();
 protected:
 	bool isFixed;
+	ObjectType objectType = ObjectType::OBJECT;
 	Vec2 coord;
-	const ObjectType objectType = ObjectType::OBJECT;
+	Vec2 nextCoord;
+	Vec2 speed;
 };
 
 #endif
