@@ -12,6 +12,7 @@ void Game::UpdateObjects()
 				
 				if (objects[i]->getObjectType() == ObjectType::PARTICLE) {// 총알일 경우
 					delete objects[i];//해당 오브젝트 삭제 
+					objects.erase(objects.begin() + i);//이렇게 짜면 되는거 맞나?
 					i--;
 					continue;
 				}
