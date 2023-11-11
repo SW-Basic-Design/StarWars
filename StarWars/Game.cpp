@@ -9,26 +9,63 @@ void Game::UpdateObjects()
 					objects[i]->SetNextCoord(objects[i]->GetCoord());//현재 오브젝트의 다음 위치를 기존 위치로 변경
 					objects[i]->SetSpeed(Vec2(0,0));// 속도를 0으로 초기화
 				}
-				
-				if (objects[i]->getObjectType() == ObjectType::PARTICLE) {// 총알일 경우
-					delete objects[i];//해당 오브젝트 삭제 
-					objects.erase(objects.begin() + i);//이렇게 짜면 되는거 맞나?
-					i--;
-					continue;
-				}
 
-				if (objects[i]->isCharacterType() && objects[j]->getObjectType() == ObjectType::PARTICLE) {// == isPlayerHit
-					((Character*)objects[i])->giveDamage(((Particle*)objects[j])->getDamage());//데미지를 입힘. UpdatePlayerState의 일부 기능
-					continue;
+				if(objects[i]->getObjectType() == ObjectType::PARTICLE) {
+					if(objects[j]->isCharacterType()) {
+						((Character*)objects[j])->giveDamage(((Particle*)objects[i])->getDamage());//데미지를 입힘. UpdatePlayerState의 일부 기능
+						delete objects[i];//총알 오브젝트 삭제 
+						objects.erase(objects.begin() + i);
+						i--;
+						break;
+					}
+					if(objects[j]->getObjectType() == ObjectType::WALL) {
+						delete objects[i];//총알 오브젝트 삭제 
+						objects.erase(objects.begin() + i);
+						i--;
+						break;
+					}
 				}
-
-				if (objects[i]->isCharacterType() && objects[j]->isItemType()) {// == CheckItemObtained
-					((DroppedItem*)objects[j])->useItem(objects[i]);//아이템 사용. UpdatePlayerState의 일부 기능도 포함됨.
-					continue;
+				else if(objects[j]->getObjectType() == ObjectType::PARTICLE) {
+					if(objects[i]->isCharacterType()) {
+						((Character*)objects[i])->giveDamage(((Particle*)objects[j])->getDamage());//데미지를 입힘. UpdatePlayerState의 일부 기능
+						delete objects[j];//총알 오브젝트 삭제 
+						objects.erase(objects.begin() + j);
+						if(i > j) {
+							i--;
+						}
+						j--;
+						continue;
+					}
+					if(objects[j]->getObjectType() == ObjectType::WALL) {
+						delete objects[j];//총알 오브젝트 삭제 
+						objects.erase(objects.begin() + j);
+						if(i > j) {
+							i--;
+						}
+						j--;
+						continue;
+					}
 				}
-
+				else {
+					if (objects[i]->isCharacterType() && objects[j]->isItemType()) {// == CheckItemObtained
+						((DroppedItem*)objects[j])->useItem(objects[i]);//아이템 사용. UpdatePlayerState의 일부 기능
+						delete objects[j];//아이템 오브젝트 삭제 
+						objects.erase(objects.begin() + j);
+						if(i > j) {
+							i--;
+						}
+						j--;
+						continue;
+					}
+					if (objects[j]->isCharacterType() && objects[i]->isItemType()) {// == CheckItemObtained
+						((DroppedItem*)objects[i])->useItem(objects[j]);//아이템 사용. UpdatePlayerState의 일부 기능
+						delete objects[i];//아이템 오브젝트 삭제 
+						objects.erase(objects.begin() + i);
+						i--;
+						break;
+					}
+				}
 			}
 		}
 	}
-	
 }
