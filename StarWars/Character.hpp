@@ -11,7 +11,6 @@ public:
 	void addHealth(const int h);
 	void giveDamage(const int d);
 	void setWeapon(const int w_id);
-	void setWeapon(const int w_id);
 	int getWeapon();
 	void setBuffTimer(const int t);
 	int getBuffTimer();

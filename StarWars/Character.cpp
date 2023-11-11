@@ -13,7 +13,6 @@ void Character::setWeapon(int w_id) {
 	weapon_id = w_id;
 }
 
-
 void Character::setHealth(const int h) {
 	health = h;
 }
